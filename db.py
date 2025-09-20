@@ -157,3 +157,13 @@ class Database:
         cursor = self.conn.cursor()
         cursor.execute("UPDATE employees SET amount_due = 0 WHERE emp_id=?", (emp_id,))
         self.conn.commit()
+
+    def get_order_items(self, order_id):
+        cursor = self.conn.cursor()
+        cursor.execute("""
+            SELECT i.item_name, oi.quantity
+            FROM order_items oi
+            JOIN items i ON oi.item_id = i.item_id
+            WHERE oi.order_id=?
+        """, (order_id,))
+        return cursor.fetchall()

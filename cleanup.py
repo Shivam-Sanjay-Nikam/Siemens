@@ -9,7 +9,7 @@ PROJECT_FOLDER = os.path.dirname(os.path.abspath(__file__))
 FILE_EXTENSIONS = ['.pyc', '.pyo', '.db', '.sqlite']
 
 # Folders to delete completely (optional)
-FOLDERS_TO_DELETE = ['__pycache__']
+FOLDERS_TO_DELETE = ['__pycache__','logs']
 
 # ---------------- CLEANUP ----------------
 def clean_files(folder):

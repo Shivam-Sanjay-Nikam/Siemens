@@ -1,0 +1,10 @@
+### To-Do List
+
+- Improve the UI
+- Add Import from CSV/Excel feature
+- Implement Log File creation
+- Add Print Receipt button (with True/False toggle switch)
+- Implement Shortcut keys to improve UI experience
+- Add Delete Item feature in Orders Tab for misdone orders
+- Create an Analytics Tab
+- Package app into an Executable (.exe)

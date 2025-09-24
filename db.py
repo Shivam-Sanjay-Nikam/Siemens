@@ -1,13 +1,29 @@
 import sqlite3
 import logging
 import os
+import sys
 from datetime import datetime
 
 class Database:
     def __init__(self, db_name="orders.db"):
+        # --- Determine database path ---
+        if getattr(sys, 'frozen', False):
+            # Running as compiled executable
+            base_path = os.path.dirname(sys.executable)
+        else:
+            # Running as script
+            base_path = os.path.dirname(os.path.abspath(__file__))
+        
+        # Create data directory next to executable/script
+        data_dir = os.path.join(base_path, "data")
+        os.makedirs(data_dir, exist_ok=True)
+        
+        # Database file path
+        db_path = os.path.join(data_dir, db_name)
+        
         # --- Setup logs directory and file ---
-        log_dir = "logs"
-        os.makedirs(log_dir, exist_ok=True)  # Ensure logs/ exists
+        log_dir = os.path.join(base_path, "logs")
+        os.makedirs(log_dir, exist_ok=True)
         log_filename = f"db_{datetime.now().strftime('%Y-%m-%d')}.log"
         log_path = os.path.join(log_dir, log_filename)
 
@@ -16,10 +32,10 @@ class Database:
             level=logging.INFO,
             format="%(asctime)s - %(levelname)s - %(message)s"
         )
-        logging.info("Database initialized")
+        logging.info(f"Database initialized at: {db_path}")
 
         # --- Setup DB ---
-        self.conn = sqlite3.connect(db_name)
+        self.conn = sqlite3.connect(db_path)
         self.create_tables()
 
     def create_tables(self):

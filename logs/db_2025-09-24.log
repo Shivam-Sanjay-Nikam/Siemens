@@ -1,0 +1,27 @@
+2025-09-24 09:48:21,712 - INFO - Database initialized
+2025-09-24 09:48:21,717 - INFO - Tables created/verified
+2025-09-24 09:48:21,760 - INFO - Fetched today's menu
+2025-09-24 09:48:21,761 - INFO - Fetched all orders
+2025-09-24 09:48:21,762 - INFO - Fetched all items
+2025-09-24 09:48:21,762 - INFO - Fetched all items
+2025-09-24 09:48:21,762 - INFO - Fetched today's menu
+2025-09-24 09:48:21,763 - INFO - Fetched all employees
+2025-09-24 09:48:51,080 - INFO - Fetched all employees
+2025-09-24 09:48:59,717 - INFO - Employee added: emp_id=1, name=shivam
+2025-09-24 09:49:00,768 - INFO - Fetched all employees
+2025-09-24 09:49:02,981 - INFO - Fetched today's menu
+2025-09-24 09:49:04,564 - INFO - Fetched all items
+2025-09-24 09:49:04,564 - INFO - Fetched all items
+2025-09-24 09:49:04,565 - INFO - Fetched today's menu
+2025-09-24 09:49:09,837 - INFO - Item added: poha, cost=20.0
+2025-09-24 09:49:09,837 - INFO - Fetched all items
+2025-09-24 09:49:09,838 - INFO - Fetched all items
+2025-09-24 09:49:09,838 - INFO - Fetched today's menu
+2025-09-24 09:49:12,617 - INFO - Today menu set: [1]
+2025-09-24 09:49:16,047 - INFO - Fetched today's menu
+2025-09-24 09:49:17,553 - INFO - Fetched all employees
+2025-09-24 09:49:18,628 - INFO - Fetched all employees
+2025-09-24 09:49:21,683 - INFO - Fetched today's menu
+2025-09-24 09:49:27,432 - WARNING - Duplicate employee ID attempted: 1
+2025-09-24 09:49:27,434 - INFO - Order placed: emp_id=1, order_id=1, total=40.0
+2025-09-24 09:49:29,365 - INFO - Fetched today's menu

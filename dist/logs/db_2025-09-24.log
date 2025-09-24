@@ -1,0 +1,79 @@
+2025-09-24 09:54:01,027 - INFO - Database initialized at: /Users/shivamsanjaynikam/Desktop/Siemens/dist/data/orders.db
+2025-09-24 09:54:01,034 - INFO - Tables created/verified
+2025-09-24 09:54:01,077 - INFO - Fetched today's menu
+2025-09-24 09:54:01,078 - INFO - Fetched all orders
+2025-09-24 09:54:01,079 - INFO - Fetched all items
+2025-09-24 09:54:01,079 - INFO - Fetched all items
+2025-09-24 09:54:01,079 - INFO - Fetched today's menu
+2025-09-24 09:54:01,080 - INFO - Fetched all employees
+2025-09-24 09:54:04,595 - INFO - Fetched all employees
+2025-09-24 09:55:08,943 - INFO - Database initialized at: /Users/shivamsanjaynikam/Desktop/Siemens/dist/data/orders.db
+2025-09-24 09:55:08,944 - INFO - Tables created/verified
+2025-09-24 09:55:08,987 - INFO - Fetched today's menu
+2025-09-24 09:55:08,988 - INFO - Fetched all orders
+2025-09-24 09:55:08,989 - INFO - Fetched all items
+2025-09-24 09:55:08,989 - INFO - Fetched all items
+2025-09-24 09:55:08,989 - INFO - Fetched today's menu
+2025-09-24 09:55:08,990 - INFO - Fetched all employees
+2025-09-24 09:55:13,211 - INFO - Fetched all employees
+2025-09-24 09:55:19,267 - INFO - Employee added: emp_id=1, name=shivam
+2025-09-24 09:55:21,648 - INFO - Fetched all employees
+2025-09-24 09:55:32,314 - INFO - Database initialized at: /Users/shivamsanjaynikam/Desktop/Siemens/dist/data/orders.db
+2025-09-24 09:55:32,315 - INFO - Tables created/verified
+2025-09-24 09:55:32,357 - INFO - Fetched today's menu
+2025-09-24 09:55:32,358 - INFO - Fetched all orders
+2025-09-24 09:55:32,359 - INFO - Fetched all items
+2025-09-24 09:55:32,359 - INFO - Fetched all items
+2025-09-24 09:55:32,359 - INFO - Fetched today's menu
+2025-09-24 09:55:32,360 - INFO - Fetched all employees
+2025-09-24 09:55:33,976 - INFO - Fetched all employees
+2025-09-24 09:55:36,027 - INFO - Fetched all items
+2025-09-24 09:55:36,027 - INFO - Fetched all items
+2025-09-24 09:55:36,027 - INFO - Fetched today's menu
+2025-09-24 09:55:36,692 - INFO - Fetched all orders
+2025-09-24 09:55:37,292 - INFO - Fetched today's menu
+2025-09-24 09:55:38,825 - INFO - Fetched all orders
+2025-09-24 09:55:40,226 - INFO - Fetched today's menu
+2025-09-24 09:55:41,925 - INFO - Fetched all items
+2025-09-24 09:55:41,925 - INFO - Fetched all items
+2025-09-24 09:55:41,926 - INFO - Fetched today's menu
+2025-09-24 09:55:46,913 - INFO - Item added: poha, cost=20.0
+2025-09-24 09:55:46,914 - INFO - Fetched all items
+2025-09-24 09:55:46,914 - INFO - Fetched all items
+2025-09-24 09:55:46,915 - INFO - Fetched today's menu
+2025-09-24 09:55:49,798 - INFO - Today menu set: [1]
+2025-09-24 09:55:53,009 - INFO - Fetched all orders
+2025-09-24 09:55:57,043 - INFO - Fetched today's menu
+2025-09-24 09:55:58,097 - INFO - Fetched all employees
+2025-09-24 09:55:59,207 - INFO - Fetched all employees
+2025-09-24 09:56:00,996 - INFO - Fetched today's menu
+2025-09-24 09:56:02,344 - WARNING - Duplicate employee ID attempted: 1
+2025-09-24 09:56:02,346 - INFO - Order placed: emp_id=1, order_id=1, total=20.0
+2025-09-24 09:56:03,896 - INFO - Fetched today's menu
+2025-09-24 09:56:06,879 - INFO - Fetched today's menu
+2025-09-24 09:56:10,979 - INFO - Fetched all employees
+2025-09-24 09:56:11,660 - INFO - Fetched all employees
+2025-09-24 09:56:12,911 - WARNING - Duplicate employee ID attempted: 1
+2025-09-24 09:56:12,914 - INFO - Order placed: emp_id=1, order_id=2, total=20.0
+2025-09-24 09:56:13,794 - INFO - Fetched today's menu
+2025-09-24 09:56:14,541 - INFO - Fetched all orders
+2025-09-24 09:56:14,542 - INFO - Fetched items for order_id=1
+2025-09-24 09:56:14,542 - INFO - Fetched items for order_id=2
+2025-09-24 09:56:27,944 - INFO - Fetched all items
+2025-09-24 09:56:27,946 - INFO - Fetched all items
+2025-09-24 09:56:27,946 - INFO - Fetched today's menu
+2025-09-24 09:56:30,025 - INFO - Fetched all employees
+2025-09-24 09:56:31,493 - INFO - Fetched today's menu
+2025-09-24 09:56:45,127 - INFO - Database initialized at: /Users/shivamsanjaynikam/Desktop/Siemens/dist/data/orders.db
+2025-09-24 09:56:45,128 - INFO - Tables created/verified
+2025-09-24 09:56:45,169 - INFO - Fetched today's menu
+2025-09-24 09:56:45,171 - INFO - Fetched all orders
+2025-09-24 09:56:45,171 - INFO - Fetched items for order_id=1
+2025-09-24 09:56:45,171 - INFO - Fetched items for order_id=2
+2025-09-24 09:56:45,173 - INFO - Fetched all items
+2025-09-24 09:56:45,215 - INFO - Fetched all items
+2025-09-24 09:56:45,215 - INFO - Fetched today's menu
+2025-09-24 09:56:45,216 - INFO - Fetched all employees
+2025-09-24 09:56:47,276 - INFO - Fetched all employees
+2025-09-24 09:56:50,459 - INFO - Fetched today's menu
+2025-09-24 09:56:52,191 - INFO - Fetched all employees

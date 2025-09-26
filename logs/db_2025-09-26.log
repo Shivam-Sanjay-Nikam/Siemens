@@ -144,3 +144,46 @@
 2025-09-26 09:10:44,105 - INFO - Fetched all orders
 2025-09-26 09:10:44,120 - INFO - Order 1 deleted, adjusted due for emp_id=EMP001 by -220.0
 2025-09-26 09:10:44,120 - INFO - Fetched all orders
+2025-09-26 18:30:09,428 - INFO - Database initialized at: /Users/shivamsanjaynikam/Desktop/Siemens/data/orders.db
+2025-09-26 18:30:09,431 - INFO - Tables created/verified
+2025-09-26 18:30:09,466 - INFO - Fetched today's menu
+2025-09-26 18:30:09,468 - INFO - Fetched all orders
+2025-09-26 18:30:09,469 - INFO - Fetched all items
+2025-09-26 18:30:09,583 - INFO - Fetched all items
+2025-09-26 18:30:09,583 - INFO - Fetched today's menu
+2025-09-26 18:30:09,585 - INFO - Fetched all employees
+2025-09-26 18:30:09,595 - INFO - Fetched KPIs
+2025-09-26 18:30:09,595 - INFO - Fetched top items
+2025-09-26 18:30:09,595 - INFO - Fetched top debtors
+2025-09-26 18:30:09,595 - INFO - Fetched recent orders
+2025-09-26 18:30:23,659 - INFO - Fetched all orders
+2025-09-26 18:30:24,678 - INFO - Fetched all items
+2025-09-26 18:30:24,715 - INFO - Fetched all items
+2025-09-26 18:30:24,715 - INFO - Fetched today's menu
+2025-09-26 18:30:26,194 - INFO - Fetched all employees
+2025-09-26 18:30:27,010 - INFO - Fetched KPIs
+2025-09-26 18:30:27,011 - INFO - Fetched top items
+2025-09-26 18:30:27,011 - INFO - Fetched top debtors
+2025-09-26 18:30:27,012 - INFO - Fetched recent orders
+2025-09-26 18:30:33,142 - INFO - Fetched today's menu
+2025-09-26 18:30:37,412 - INFO - Fetched all employees
+2025-09-26 18:30:38,673 - INFO - Fetched all employees
+2025-09-26 18:30:43,792 - INFO - Fetched today's menu
+2025-09-26 18:30:47,025 - WARNING - Duplicate employee ID attempted: EMP002
+2025-09-26 18:30:47,027 - INFO - Order placed: emp_id=EMP002, order_id=2, total=20.0
+2025-09-26 18:30:47,028 - INFO - Fetched all items
+2025-09-26 18:30:48,992 - ERROR - Print failed for order 2: type object 'QPrinter' has no attribute 'availablePrinters'
+2025-09-26 18:31:02,988 - INFO - Fetched today's menu
+2025-09-26 18:31:07,340 - INFO - Fetched all orders
+2025-09-26 18:31:07,341 - INFO - Fetched items for order_id=2
+2025-09-26 18:31:15,777 - INFO - Fetched all items
+2025-09-26 18:31:15,813 - INFO - Fetched all items
+2025-09-26 18:31:15,813 - INFO - Fetched today's menu
+2025-09-26 18:31:19,376 - INFO - Fetched all items
+2025-09-26 18:31:19,413 - INFO - Fetched all items
+2025-09-26 18:31:19,413 - INFO - Fetched today's menu
+2025-09-26 18:31:35,844 - INFO - Fetched all employees
+2025-09-26 18:31:38,409 - INFO - Fetched KPIs
+2025-09-26 18:31:38,410 - INFO - Fetched top items
+2025-09-26 18:31:38,410 - INFO - Fetched top debtors
+2025-09-26 18:31:38,410 - INFO - Fetched recent orders

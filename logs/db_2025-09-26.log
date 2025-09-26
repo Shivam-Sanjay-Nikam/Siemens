@@ -1,0 +1,146 @@
+2025-09-26 09:09:59,684 - INFO - Database initialized at: /home/praby/siemens/Siemens/data/orders.db
+2025-09-26 09:09:59,748 - INFO - Tables created/verified
+2025-09-26 09:09:59,749 - INFO - Fetched all items
+2025-09-26 09:09:59,749 - INFO - Fetched all employees
+2025-09-26 09:09:59,749 - INFO - Fetched all items
+2025-09-26 09:09:59,749 - INFO - Fetched today's menu
+2025-09-26 09:10:16,991 - INFO - Database initialized at: /home/praby/siemens/Siemens/data/orders.db
+2025-09-26 09:10:16,991 - INFO - Tables created/verified
+2025-09-26 09:10:17,012 - INFO - Employee added: emp_id=EMP001, name=Rajesh Kumar
+2025-09-26 09:10:17,024 - INFO - Employee added: emp_id=EMP002, name=Priya Sharma
+2025-09-26 09:10:17,034 - INFO - Employee added: emp_id=EMP003, name=Amit Patel
+2025-09-26 09:10:17,044 - INFO - Employee added: emp_id=EMP004, name=Sunita Singh
+2025-09-26 09:10:17,055 - INFO - Employee added: emp_id=EMP005, name=Vikram Gupta
+2025-09-26 09:10:17,065 - INFO - Employee added: emp_id=EMP006, name=Anita Reddy
+2025-09-26 09:10:17,075 - INFO - Employee added: emp_id=EMP007, name=Suresh Joshi
+2025-09-26 09:10:17,086 - INFO - Employee added: emp_id=EMP008, name=Kavita Mehta
+2025-09-26 09:10:17,101 - INFO - Employee added: emp_id=EMP009, name=Ravi Verma
+2025-09-26 09:10:17,112 - INFO - Employee added: emp_id=EMP010, name=Deepa Agarwal
+2025-09-26 09:10:17,125 - INFO - Employee added: emp_id=EMP011, name=Sandeep Kumar
+2025-09-26 09:10:17,136 - INFO - Employee added: emp_id=EMP012, name=Meera Iyer
+2025-09-26 09:10:17,146 - INFO - Employee added: emp_id=EMP013, name=Arjun Nair
+2025-09-26 09:10:17,157 - INFO - Employee added: emp_id=EMP014, name=Shilpa Desai
+2025-09-26 09:10:17,167 - INFO - Employee added: emp_id=EMP015, name=Rohit Shah
+2025-09-26 09:10:17,177 - INFO - Employee added: emp_id=EMP016, name=Neha Trivedi
+2025-09-26 09:10:17,188 - INFO - Employee added: emp_id=EMP017, name=Manish Jain
+2025-09-26 09:10:17,198 - INFO - Employee added: emp_id=EMP018, name=Pooja Agarwal
+2025-09-26 09:10:17,209 - INFO - Employee added: emp_id=EMP019, name=Anil Tiwari
+2025-09-26 09:10:17,220 - INFO - Employee added: emp_id=EMP020, name=Reena Kapoor
+2025-09-26 09:10:17,229 - INFO - Employee added: emp_id=EMP021, name=Vishal Singh
+2025-09-26 09:10:17,240 - INFO - Employee added: emp_id=EMP022, name=Swati Rao
+2025-09-26 09:10:17,251 - INFO - Employee added: emp_id=EMP023, name=Kiran Malhotra
+2025-09-26 09:10:17,278 - INFO - Employee added: emp_id=EMP024, name=Rajiv Choudhary
+2025-09-26 09:10:17,288 - INFO - Employee added: emp_id=EMP025, name=Asha Pandey
+2025-09-26 09:10:17,299 - INFO - Employee added: emp_id=EMP026, name=Satish Kumar
+2025-09-26 09:10:17,309 - INFO - Employee added: emp_id=EMP027, name=Geeta Mishra
+2025-09-26 09:10:17,320 - INFO - Employee added: emp_id=EMP028, name=Naveen Reddy
+2025-09-26 09:10:17,329 - INFO - Employee added: emp_id=EMP029, name=Shruti Gupta
+2025-09-26 09:10:17,339 - INFO - Employee added: emp_id=EMP030, name=Mahesh Yadav
+2025-09-26 09:10:17,349 - INFO - Employee added: emp_id=EMP031, name=Ritu Sharma
+2025-09-26 09:10:17,359 - INFO - Employee added: emp_id=EMP032, name=Ajay Verma
+2025-09-26 09:10:17,368 - INFO - Employee added: emp_id=EMP033, name=Suman Patel
+2025-09-26 09:10:17,377 - INFO - Employee added: emp_id=EMP034, name=Rakesh Singh
+2025-09-26 09:10:17,387 - INFO - Employee added: emp_id=EMP035, name=Kamala Devi
+2025-09-26 09:10:17,395 - INFO - Employee added: emp_id=EMP036, name=Suresh Kumar
+2025-09-26 09:10:17,410 - INFO - Employee added: emp_id=EMP037, name=Indira Reddy
+2025-09-26 09:10:17,420 - INFO - Employee added: emp_id=EMP038, name=Prakash Joshi
+2025-09-26 09:10:17,430 - INFO - Employee added: emp_id=EMP039, name=Lakshmi Iyer
+2025-09-26 09:10:17,447 - INFO - Employee added: emp_id=EMP040, name=Venkatesh Rao
+2025-09-26 09:10:17,458 - INFO - Item added: Idli (2 pcs), cost=25.0
+2025-09-26 09:10:17,470 - INFO - Item added: Dosa (Plain), cost=30.0
+2025-09-26 09:10:17,479 - INFO - Item added: Masala Dosa, cost=45.0
+2025-09-26 09:10:17,490 - INFO - Item added: Rava Dosa, cost=40.0
+2025-09-26 09:10:17,500 - INFO - Item added: Uttapam, cost=35.0
+2025-09-26 09:10:17,515 - INFO - Item added: Vada (2 pcs), cost=20.0
+2025-09-26 09:10:17,526 - INFO - Item added: Sambhar, cost=15.0
+2025-09-26 09:10:17,536 - INFO - Item added: Coconut Chutney, cost=10.0
+2025-09-26 09:10:17,546 - INFO - Item added: Tomato Chutney, cost=10.0
+2025-09-26 09:10:17,556 - INFO - Item added: Poha, cost=25.0
+2025-09-26 09:10:17,566 - INFO - Item added: Upma, cost=30.0
+2025-09-26 09:10:17,576 - INFO - Item added: Pongal, cost=35.0
+2025-09-26 09:10:17,587 - INFO - Item added: Paratha (Plain), cost=20.0
+2025-09-26 09:10:17,597 - INFO - Item added: Aloo Paratha, cost=35.0
+2025-09-26 09:10:17,607 - INFO - Item added: Gobi Paratha, cost=40.0
+2025-09-26 09:10:17,617 - INFO - Item added: Onion Paratha, cost=30.0
+2025-09-26 09:10:17,626 - INFO - Item added: Poori (2 pcs), cost=25.0
+2025-09-26 09:10:17,637 - INFO - Item added: Bhature (2 pcs), cost=30.0
+2025-09-26 09:10:17,647 - INFO - Item added: Chole, cost=40.0
+2025-09-26 09:10:17,658 - INFO - Item added: Rajma, cost=45.0
+2025-09-26 09:10:17,669 - INFO - Item added: Dal Tadka, cost=35.0
+2025-09-26 09:10:17,679 - INFO - Item added: Dal Fry, cost=30.0
+2025-09-26 09:10:17,689 - INFO - Item added: Jeera Rice, cost=25.0
+2025-09-26 09:10:17,699 - INFO - Item added: Fried Rice, cost=50.0
+2025-09-26 09:10:17,710 - INFO - Item added: Biryani (Veg), cost=60.0
+2025-09-26 09:10:17,720 - INFO - Item added: Pulao, cost=45.0
+2025-09-26 09:10:17,731 - INFO - Item added: Khichdi, cost=40.0
+2025-09-26 09:10:17,742 - INFO - Item added: Curd Rice, cost=25.0
+2025-09-26 09:10:17,753 - INFO - Item added: Raita, cost=20.0
+2025-09-26 09:10:17,764 - INFO - Item added: Pickle, cost=15.0
+2025-09-26 09:10:17,774 - INFO - Item added: Papad (2 pcs), cost=10.0
+2025-09-26 09:10:17,787 - INFO - Item added: Samosa (2 pcs), cost=25.0
+2025-09-26 09:10:17,797 - INFO - Item added: Kachori (2 pcs), cost=30.0
+2025-09-26 09:10:17,808 - INFO - Item added: Pakora (6 pcs), cost=35.0
+2025-09-26 09:10:17,819 - INFO - Item added: Bread Pakora, cost=20.0
+2025-09-26 09:10:17,829 - INFO - Item added: Aloo Tikki, cost=25.0
+2025-09-26 09:10:17,840 - INFO - Item added: Chaat, cost=30.0
+2025-09-26 09:10:17,850 - INFO - Item added: Bhel Puri, cost=25.0
+2025-09-26 09:10:17,861 - INFO - Item added: Pani Puri (6 pcs), cost=20.0
+2025-09-26 09:10:17,872 - INFO - Item added: Dahi Puri (6 pcs), cost=30.0
+2025-09-26 09:10:17,883 - INFO - Item added: Sev Puri (6 pcs), cost=25.0
+2025-09-26 09:10:17,894 - INFO - Item added: Pav Bhaji, cost=45.0
+2025-09-26 09:10:17,921 - INFO - Item added: Vada Pav, cost=25.0
+2025-09-26 09:10:17,934 - INFO - Item added: Dabeli, cost=20.0
+2025-09-26 09:10:17,944 - INFO - Item added: Sandwich (Veg), cost=35.0
+2025-09-26 09:10:17,954 - INFO - Item added: Toast Butter, cost=15.0
+2025-09-26 09:10:17,966 - INFO - Item added: Bread Jam, cost=20.0
+2025-09-26 09:10:17,976 - INFO - Item added: Boiled Egg, cost=15.0
+2025-09-26 09:10:17,987 - INFO - Item added: Omelette (Plain), cost=25.0
+2025-09-26 09:10:17,998 - INFO - Item added: Masala Omelette, cost=35.0
+2025-09-26 09:10:18,009 - INFO - Item added: Egg Curry, cost=50.0
+2025-09-26 09:10:18,019 - INFO - Item added: Egg Biryani, cost=60.0
+2025-09-26 09:10:18,030 - INFO - Item added: Egg Fried Rice, cost=45.0
+2025-09-26 09:10:18,042 - INFO - Item added: Egg Sandwich, cost=40.0
+2025-09-26 09:10:18,053 - INFO - Item added: Egg Roll, cost=35.0
+2025-09-26 09:10:18,068 - INFO - Item added: Egg Bhurji, cost=30.0
+2025-09-26 09:10:18,079 - INFO - Item added: Scrambled Eggs, cost=25.0
+2025-09-26 09:10:18,091 - INFO - Item added: Egg Toast, cost=30.0
+2025-09-26 09:10:18,101 - INFO - Item added: Tea, cost=10.0
+2025-09-26 09:10:18,112 - INFO - Item added: Coffee, cost=15.0
+2025-09-26 09:10:18,123 - INFO - Item added: Milk, cost=20.0
+2025-09-26 09:10:18,134 - INFO - Item added: Lassi (Sweet), cost=25.0
+2025-09-26 09:10:18,143 - INFO - Item added: Lassi (Salt), cost=25.0
+2025-09-26 09:10:18,153 - INFO - Item added: Buttermilk, cost=15.0
+2025-09-26 09:10:18,163 - INFO - Item added: Fresh Lime, cost=20.0
+2025-09-26 09:10:18,174 - INFO - Item added: Orange Juice, cost=30.0
+2025-09-26 09:10:18,183 - INFO - Item added: Apple Juice, cost=30.0
+2025-09-26 09:10:18,193 - INFO - Item added: Banana Shake, cost=35.0
+2025-09-26 09:10:18,205 - INFO - Item added: Mango Shake, cost=40.0
+2025-09-26 09:10:18,214 - INFO - Item added: Ice Cream (1 scoop), cost=25.0
+2025-09-26 09:10:18,226 - INFO - Item added: Kulfi, cost=30.0
+2025-09-26 09:10:18,236 - INFO - Item added: Gulab Jamun (2 pcs), cost=20.0
+2025-09-26 09:10:18,245 - INFO - Item added: Rasgulla (2 pcs), cost=15.0
+2025-09-26 09:10:18,256 - INFO - Item added: Jalebi (100g), cost=30.0
+2025-09-26 09:10:18,268 - INFO - Item added: Ladoo (2 pcs), cost=25.0
+2025-09-26 09:10:18,293 - INFO - Item added: Biscuits (4 pcs), cost=15.0
+2025-09-26 09:10:18,303 - INFO - Item added: Namkeen, cost=20.0
+2025-09-26 09:10:18,314 - INFO - Item added: Chips, cost=25.0
+2025-09-26 09:10:18,325 - INFO - Item added: Nuts Mix, cost=40.0
+2025-09-26 09:10:18,326 - INFO - Fetched all items
+2025-09-26 09:10:18,336 - INFO - Today menu set: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+2025-09-26 09:10:18,337 - INFO - Fetched all employees
+2025-09-26 09:10:18,337 - INFO - Fetched all items
+2025-09-26 09:10:18,337 - INFO - Fetched today's menu
+2025-09-26 09:10:44,074 - INFO - Database initialized at: /home/praby/siemens/Siemens/data/orders.db
+2025-09-26 09:10:44,074 - INFO - Tables created/verified
+2025-09-26 09:10:44,075 - INFO - Fetched all employees
+2025-09-26 09:10:44,075 - INFO - Fetched all items
+2025-09-26 09:10:44,075 - INFO - Fetched today's menu
+2025-09-26 09:10:44,093 - INFO - Order placed: emp_id=EMP001, order_id=1, total=220.0
+2025-09-26 09:10:44,093 - INFO - Fetched all orders
+2025-09-26 09:10:44,103 - INFO - Adjusted employee due: id=1, change=-50.0
+2025-09-26 09:10:44,104 - INFO - Fetched all employees
+2025-09-26 09:10:44,104 - INFO - Fetched KPIs
+2025-09-26 09:10:44,104 - INFO - Fetched top items
+2025-09-26 09:10:44,105 - INFO - Fetched all orders
+2025-09-26 09:10:44,120 - INFO - Order 1 deleted, adjusted due for emp_id=EMP001 by -220.0
+2025-09-26 09:10:44,120 - INFO - Fetched all orders

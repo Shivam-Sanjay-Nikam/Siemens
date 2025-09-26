@@ -1,9 +1,12 @@
 from PyQt5.QtWidgets import (
     QWidget, QVBoxLayout, QLabel, QLineEdit, QPushButton, QTableWidget,
     QTableWidgetItem, QHBoxLayout, QMessageBox, QListWidget, QListWidgetItem,
-    QHeaderView
+    QHeaderView, QFileDialog, QShortcut
 )
 from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QKeySequence
+import os
+import csv
 
 class MenuMakerTab(QWidget):
     def __init__(self, db):
@@ -23,9 +26,11 @@ class MenuMakerTab(QWidget):
         self.cost_input = QLineEdit()
         self.cost_input.setPlaceholderText("Price (₹)")
         self.add_btn = QPushButton("Add Item")
+        self.import_btn = QPushButton("Import CSV/Excel")
         form_layout.addWidget(self.item_input)
         form_layout.addWidget(self.cost_input)
         form_layout.addWidget(self.add_btn)
+        form_layout.addWidget(self.import_btn)
         layout.addLayout(form_layout)
 
         # --- Menu Table ---
@@ -63,7 +68,14 @@ class MenuMakerTab(QWidget):
 
         # Events
         self.add_btn.clicked.connect(self.add_item)
+        self.import_btn.clicked.connect(self.import_items)
         self.save_today_btn.clicked.connect(self.save_today_menu)
+
+        # --- Setup Shortcuts ---
+        self.setup_shortcuts()
+        
+        # --- Apply Styling ---
+        self.apply_styling()
 
         self.refresh()  # initial load
 
@@ -153,3 +165,189 @@ class MenuMakerTab(QWidget):
         """General refresh method for tab switching"""
         self.refresh_menu()
         self.refresh_today_menu()
+
+    # ---------------- Import Utilities ----------------
+    def import_items(self):
+        """Open a file dialog to import items from CSV or Excel."""
+        file_path, _ = QFileDialog.getOpenFileName(
+            self,
+            "Select CSV or Excel file",
+            os.path.expanduser("~"),
+            "CSV Files (*.csv);;Excel Files (*.xlsx *.xls)"
+        )
+        if not file_path:
+            return
+
+        try:
+            imported_count = 0
+            if file_path.lower().endswith(".csv"):
+                imported_count = self._import_from_csv(file_path)
+            elif file_path.lower().endswith((".xlsx", ".xls")):
+                imported_count = self._import_from_excel(file_path)
+            else:
+                QMessageBox.warning(self, "Unsupported", "Please select a .csv, .xlsx, or .xls file.")
+                return
+
+            self.refresh()
+            QMessageBox.information(self, "Import Complete", f"Imported {imported_count} item(s).")
+        except Exception as exc:
+            QMessageBox.critical(self, "Import Failed", f"Error importing file:\n{exc}")
+
+    def _import_from_csv(self, file_path):
+        """Import items from a CSV file with columns: name, price.
+        The file may contain a header row. Extra columns are ignored.
+        """
+        imported = 0
+        with open(file_path, newline='', encoding='utf-8') as csvfile:
+            reader = csv.reader(csvfile)
+            for row_idx, row in enumerate(reader):
+                if not row:
+                    continue
+                # Normalize and attempt to detect header
+                cells = [c.strip() for c in row]
+                if row_idx == 0 and len(cells) >= 2:
+                    header_join = " ".join(cells[:2]).lower()
+                    if "name" in header_join and ("price" in header_join or "cost" in header_join):
+                        continue  # skip header
+
+                if len(cells) < 2:
+                    continue
+                name = cells[0]
+                price_text = cells[1].replace("₹", "").strip()
+                # Validate price
+                if not name:
+                    continue
+                if not price_text.replace(".", "", 1).isdigit():
+                    continue
+                self.db.add_item(name, float(price_text))
+                imported += 1
+        return imported
+
+    def _import_from_excel(self, file_path):
+        """Import items from an Excel file with first two columns: name, price.
+        The sheet may contain a header row. Extra columns are ignored.
+        """
+        try:
+            import openpyxl  # type: ignore
+        except Exception:
+            raise RuntimeError("openpyxl is required for Excel import. Please install it.")
+
+        wb = openpyxl.load_workbook(file_path, data_only=True)
+        sheet = wb.active
+        imported = 0
+
+        for row_idx, row in enumerate(sheet.iter_rows(values_only=True)):
+            if not row:
+                continue
+            name = (row[0] if len(row) > 0 else None)
+            price = (row[1] if len(row) > 1 else None)
+
+            # Header detection
+            if row_idx == 0 and isinstance(name, str) and isinstance(price, (str, type(None))):
+                header_join = f"{str(name).lower()} {str(price).lower() if price is not None else ''}"
+                if "name" in header_join and ("price" in header_join or "cost" in header_join):
+                    continue
+
+            if isinstance(name, str):
+                name = name.strip()
+            if not name:
+                continue
+
+            # Normalize/validate price
+            if isinstance(price, str):
+                price_text = price.replace("₹", "").strip()
+                if not price_text.replace(".", "", 1).isdigit():
+                    continue
+                price_val = float(price_text)
+            elif isinstance(price, (int, float)):
+                price_val = float(price)
+            else:
+                continue
+
+            self.db.add_item(name, price_val)
+            imported += 1
+
+        return imported
+
+    def setup_shortcuts(self):
+        """Setup keyboard shortcuts for Menu Maker tab."""
+        # Add item shortcut
+        QShortcut(QKeySequence("Ctrl+N"), self, self.add_item)
+        
+        # Import shortcut
+        QShortcut(QKeySequence("Ctrl+I"), self, self.import_items)
+        
+        # Save today's menu shortcut
+        QShortcut(QKeySequence("Ctrl+S"), self, self.save_today_menu)
+        
+        # Focus shortcuts
+        QShortcut(QKeySequence("Ctrl+F"), self, lambda: self.item_input.setFocus())
+
+    def apply_styling(self):
+        """Apply modern styling to Menu Maker tab."""
+        self.setStyleSheet("""
+            QLabel {
+                font-weight: bold;
+                color: #333;
+                margin: 5px 0px;
+            }
+            QLineEdit {
+                padding: 8px;
+                border: 2px solid #ddd;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+            QLineEdit:focus {
+                border-color: #0078d4;
+            }
+            QPushButton {
+                background-color: #0078d4;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-weight: bold;
+                font-size: 14px;
+            }
+            QPushButton:hover {
+                background-color: #106ebe;
+            }
+            QPushButton:pressed {
+                background-color: #005a9e;
+            }
+            QTableWidget {
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                background-color: white;
+                gridline-color: #e0e0e0;
+            }
+            QTableWidget::item {
+                padding: 8px;
+                border-bottom: 1px solid #e0e0e0;
+            }
+            QTableWidget::item:selected {
+                background-color: #e3f2fd;
+            }
+            QListWidget {
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                background-color: white;
+            }
+            QListWidget::item {
+                padding: 5px;
+                border-bottom: 1px solid #f0f0f0;
+                color: #333;
+            }
+            QListWidget::item:hover {
+                background-color: #f5f5f5;
+                color: #333;
+            }
+            QListWidget::item:selected {
+                background-color: #e3f2fd;
+                color: #000;
+            }
+            QListWidget::item:selected:hover {
+                background-color: #bbdefb;
+                color: #000;
+            }
+        """)

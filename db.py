@@ -58,6 +58,7 @@ class Database:
             order_id INTEGER PRIMARY KEY AUTOINCREMENT,
             emp_id TEXT,
             total_order_cost REAL,
+            created_at TEXT,
             FOREIGN KEY(emp_id) REFERENCES employees(emp_id)
         );
 
@@ -77,6 +78,17 @@ class Database:
         """)
         self.conn.commit()
         logging.info("Tables created/verified")
+
+        # Ensure created_at column exists in orders for older DBs
+        try:
+            cursor.execute("PRAGMA table_info(orders)")
+            cols = [row[1] for row in cursor.fetchall()]
+            if 'created_at' not in cols:
+                cursor.execute("ALTER TABLE orders ADD COLUMN created_at TEXT")
+                self.conn.commit()
+                logging.info("Added created_at column to orders table")
+        except Exception as exc:
+            logging.warning(f"Could not verify/add created_at column: {exc}")
 
     # ---------------- MENU METHODS ----------------
     def add_item(self, name, cost):
@@ -174,7 +186,8 @@ class Database:
             price = cursor.fetchone()[0]
             total += price * qty
 
-        cursor.execute("INSERT INTO orders(emp_id, total_order_cost) VALUES(?, ?)", (emp_id, total))
+        now_iso = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        cursor.execute("INSERT INTO orders(emp_id, total_order_cost, created_at) VALUES(?, ?, ?)", (emp_id, total, now_iso))
         order_id = cursor.lastrowid
 
         for item_id, qty in items_with_qty:
@@ -217,3 +230,128 @@ class Database:
         items = cursor.fetchall()
         logging.info(f"Fetched items for order_id={order_id}")
         return items
+
+    # ---------------- ANALYTICS METHODS ----------------
+    def get_kpis(self, date_from: str = None, date_to: str = None):
+        """Return high-level KPIs with optional date range on orders.
+        date_from/date_to format: 'YYYY-MM-DD HH:MM:SS' or 'YYYY-MM-DD'.
+        """
+        cursor = self.conn.cursor()
+
+        where_clause = ""
+        params = []
+        if date_from and date_to:
+            where_clause = " WHERE created_at >= ? AND created_at <= ?"
+            params = [date_from, date_to]
+
+        cursor.execute("SELECT COUNT(*) FROM orders" + where_clause, params)
+        total_orders = cursor.fetchone()[0]
+
+        cursor.execute("SELECT COALESCE(SUM(total_order_cost), 0) FROM orders" + where_clause, params)
+        total_revenue = cursor.fetchone()[0] or 0.0
+
+        cursor.execute("SELECT COUNT(*) FROM employees")
+        total_employees = cursor.fetchone()[0]
+
+        cursor.execute("SELECT COALESCE(SUM(amount_due), 0) FROM employees")
+        total_due = cursor.fetchone()[0] or 0.0
+
+        logging.info("Fetched KPIs")
+        return {
+            "total_orders": total_orders,
+            "total_revenue": total_revenue,
+            "total_employees": total_employees,
+            "total_due": total_due,
+        }
+
+    def get_top_items(self, limit=10, date_from: str = None, date_to: str = None):
+        """Return top selling items by quantity with optional date range on orders."""
+        cursor = self.conn.cursor()
+        where = ""
+        params = []
+        if date_from and date_to:
+            where = " WHERE o.created_at >= ? AND o.created_at <= ?"
+            params.extend([date_from, date_to])
+        params.append(limit)
+        cursor.execute(
+            f"""
+            SELECT i.item_name, SUM(oi.quantity) as total_qty
+            FROM order_items oi
+            JOIN items i ON oi.item_id = i.item_id
+            JOIN orders o ON oi.order_id = o.order_id
+            {where}
+            GROUP BY oi.item_id
+            ORDER BY total_qty DESC
+            LIMIT ?
+            """,
+            params
+        )
+        rows = cursor.fetchall()
+        logging.info("Fetched top items")
+        return rows
+
+    def get_top_debtors(self, limit=10):
+        """Return employees with highest amount_due."""
+        cursor = self.conn.cursor()
+        cursor.execute(
+            """
+            SELECT emp_name, emp_id, amount_due
+            FROM employees
+            ORDER BY amount_due DESC
+            LIMIT ?
+            """,
+            (limit,)
+        )
+        rows = cursor.fetchall()
+        logging.info("Fetched top debtors")
+        return rows
+
+    def get_recent_orders(self, limit=10, date_from: str = None, date_to: str = None):
+        """Return recent orders with optional date range."""
+        cursor = self.conn.cursor()
+        where = ""
+        params = []
+        if date_from and date_to:
+            where = " WHERE o.created_at >= ? AND o.created_at <= ?"
+            params.extend([date_from, date_to])
+        params.append(limit)
+        cursor.execute(
+            f"""
+            SELECT o.order_id, e.emp_name, o.total_order_cost
+            FROM orders o
+            JOIN employees e ON o.emp_id = e.emp_id
+            {where}
+            ORDER BY o.order_id DESC
+            LIMIT ?
+            """,
+            params
+        )
+        rows = cursor.fetchall()
+        logging.info("Fetched recent orders")
+        return rows
+
+    def delete_order(self, order_id):
+        """Delete an order and adjust employee's due amount."""
+        cursor = self.conn.cursor()
+        
+        # Get order details before deletion
+        cursor.execute("SELECT emp_id, total_order_cost FROM orders WHERE order_id=?", (order_id,))
+        order_data = cursor.fetchone()
+        if not order_data:
+            logging.warning(f"Order {order_id} not found for deletion")
+            return False
+        
+        emp_id, total_cost = order_data
+        
+        # Delete order items first (foreign key constraint)
+        cursor.execute("DELETE FROM order_items WHERE order_id=?", (order_id,))
+        
+        # Delete the order
+        cursor.execute("DELETE FROM orders WHERE order_id=?", (order_id,))
+        
+        # Adjust employee's due amount (subtract the order cost)
+        cursor.execute("UPDATE employees SET amount_due = amount_due - ? WHERE emp_id=?", (total_cost, emp_id))
+        
+        self.conn.commit()
+        logging.info(f"Order {order_id} deleted, adjusted due for emp_id={emp_id} by -{total_cost}")
+        return True

@@ -1,0 +1,201 @@
+2025-09-26 09:19:06,183 - INFO - Database initialized at: /home/praby/siemens/Siemens/dist/data/orders.db
+2025-09-26 09:19:06,245 - INFO - Tables created/verified
+2025-09-26 09:19:06,435 - INFO - Fetched today's menu
+2025-09-26 09:19:06,440 - INFO - Fetched all orders
+2025-09-26 09:19:06,446 - INFO - Fetched all items
+2025-09-26 09:19:06,446 - INFO - Fetched all items
+2025-09-26 09:19:06,446 - INFO - Fetched today's menu
+2025-09-26 09:19:06,453 - INFO - Fetched all employees
+2025-09-26 09:19:06,471 - INFO - Fetched KPIs
+2025-09-26 09:19:06,471 - INFO - Fetched top items
+2025-09-26 09:19:06,472 - INFO - Fetched top debtors
+2025-09-26 09:19:06,472 - INFO - Fetched recent orders
+2025-09-26 09:23:07,984 - INFO - Fetched all employees
+2025-09-26 09:23:16,863 - INFO - Employee added: emp_id=EMP001, name=Rajesh Kumar
+2025-09-26 09:23:16,874 - INFO - Employee added: emp_id=EMP002, name=Priya Sharma
+2025-09-26 09:23:16,885 - INFO - Employee added: emp_id=EMP003, name=Amit Patel
+2025-09-26 09:23:16,894 - INFO - Employee added: emp_id=EMP004, name=Sunita Singh
+2025-09-26 09:23:16,904 - INFO - Employee added: emp_id=EMP005, name=Vikram Gupta
+2025-09-26 09:23:16,913 - INFO - Employee added: emp_id=EMP006, name=Anita Reddy
+2025-09-26 09:23:16,923 - INFO - Employee added: emp_id=EMP007, name=Suresh Joshi
+2025-09-26 09:23:16,931 - INFO - Employee added: emp_id=EMP008, name=Kavita Mehta
+2025-09-26 09:23:16,941 - INFO - Employee added: emp_id=EMP009, name=Ravi Verma
+2025-09-26 09:23:16,955 - INFO - Employee added: emp_id=EMP010, name=Deepa Agarwal
+2025-09-26 09:23:16,965 - INFO - Employee added: emp_id=EMP011, name=Sandeep Kumar
+2025-09-26 09:23:16,973 - INFO - Employee added: emp_id=EMP012, name=Meera Iyer
+2025-09-26 09:23:16,984 - INFO - Employee added: emp_id=EMP013, name=Arjun Nair
+2025-09-26 09:23:16,994 - INFO - Employee added: emp_id=EMP014, name=Shilpa Desai
+2025-09-26 09:23:17,004 - INFO - Employee added: emp_id=EMP015, name=Rohit Shah
+2025-09-26 09:23:17,013 - INFO - Employee added: emp_id=EMP016, name=Neha Trivedi
+2025-09-26 09:23:17,023 - INFO - Employee added: emp_id=EMP017, name=Manish Jain
+2025-09-26 09:23:17,033 - INFO - Employee added: emp_id=EMP018, name=Pooja Agarwal
+2025-09-26 09:23:17,043 - INFO - Employee added: emp_id=EMP019, name=Anil Tiwari
+2025-09-26 09:23:17,052 - INFO - Employee added: emp_id=EMP020, name=Reena Kapoor
+2025-09-26 09:23:17,063 - INFO - Employee added: emp_id=EMP021, name=Vishal Singh
+2025-09-26 09:23:17,073 - INFO - Employee added: emp_id=EMP022, name=Swati Rao
+2025-09-26 09:23:17,087 - INFO - Employee added: emp_id=EMP023, name=Kiran Malhotra
+2025-09-26 09:23:17,098 - INFO - Employee added: emp_id=EMP024, name=Rajiv Choudhary
+2025-09-26 09:23:17,108 - INFO - Employee added: emp_id=EMP025, name=Asha Pandey
+2025-09-26 09:23:17,119 - INFO - Employee added: emp_id=EMP026, name=Satish Kumar
+2025-09-26 09:23:17,129 - INFO - Employee added: emp_id=EMP027, name=Geeta Mishra
+2025-09-26 09:23:17,140 - INFO - Employee added: emp_id=EMP028, name=Naveen Reddy
+2025-09-26 09:23:17,150 - INFO - Employee added: emp_id=EMP029, name=Shruti Gupta
+2025-09-26 09:23:17,161 - INFO - Employee added: emp_id=EMP030, name=Mahesh Yadav
+2025-09-26 09:23:17,171 - INFO - Employee added: emp_id=EMP031, name=Ritu Sharma
+2025-09-26 09:23:17,182 - INFO - Employee added: emp_id=EMP032, name=Ajay Verma
+2025-09-26 09:23:17,192 - INFO - Employee added: emp_id=EMP033, name=Suman Patel
+2025-09-26 09:23:17,203 - INFO - Employee added: emp_id=EMP034, name=Rakesh Singh
+2025-09-26 09:23:17,213 - INFO - Employee added: emp_id=EMP035, name=Kamala Devi
+2025-09-26 09:23:17,224 - INFO - Employee added: emp_id=EMP036, name=Suresh Kumar
+2025-09-26 09:23:17,238 - INFO - Employee added: emp_id=EMP037, name=Indira Reddy
+2025-09-26 09:23:17,248 - INFO - Employee added: emp_id=EMP038, name=Prakash Joshi
+2025-09-26 09:23:17,259 - INFO - Employee added: emp_id=EMP039, name=Lakshmi Iyer
+2025-09-26 09:23:17,272 - INFO - Employee added: emp_id=EMP040, name=Venkatesh Rao
+2025-09-26 09:23:17,272 - INFO - Fetched all employees
+2025-09-26 09:23:19,559 - INFO - Fetched all items
+2025-09-26 09:23:19,559 - INFO - Fetched all items
+2025-09-26 09:23:19,559 - INFO - Fetched today's menu
+2025-09-26 09:23:33,264 - INFO - Item added: Idli (2 pcs), cost=25.0
+2025-09-26 09:23:33,275 - INFO - Item added: Dosa (Plain), cost=30.0
+2025-09-26 09:23:33,287 - INFO - Item added: Masala Dosa, cost=45.0
+2025-09-26 09:23:33,300 - INFO - Item added: Rava Dosa, cost=40.0
+2025-09-26 09:23:33,313 - INFO - Item added: Uttapam, cost=35.0
+2025-09-26 09:23:33,337 - INFO - Item added: Vada (2 pcs), cost=20.0
+2025-09-26 09:23:33,353 - INFO - Item added: Sambhar, cost=15.0
+2025-09-26 09:23:33,364 - INFO - Item added: Coconut Chutney, cost=10.0
+2025-09-26 09:23:33,382 - INFO - Item added: Tomato Chutney, cost=10.0
+2025-09-26 09:23:33,405 - INFO - Item added: Poha, cost=25.0
+2025-09-26 09:23:33,423 - INFO - Item added: Upma, cost=30.0
+2025-09-26 09:23:33,442 - INFO - Item added: Pongal, cost=35.0
+2025-09-26 09:23:33,466 - INFO - Item added: Paratha (Plain), cost=20.0
+2025-09-26 09:23:33,477 - INFO - Item added: Aloo Paratha, cost=35.0
+2025-09-26 09:23:33,495 - INFO - Item added: Gobi Paratha, cost=40.0
+2025-09-26 09:23:33,525 - INFO - Item added: Onion Paratha, cost=30.0
+2025-09-26 09:23:33,549 - INFO - Item added: Poori (2 pcs), cost=25.0
+2025-09-26 09:23:33,560 - INFO - Item added: Bhature (2 pcs), cost=30.0
+2025-09-26 09:23:33,578 - INFO - Item added: Chole, cost=40.0
+2025-09-26 09:23:33,594 - INFO - Item added: Rajma, cost=45.0
+2025-09-26 09:23:33,606 - INFO - Item added: Dal Tadka, cost=35.0
+2025-09-26 09:23:33,619 - INFO - Item added: Dal Fry, cost=30.0
+2025-09-26 09:23:33,637 - INFO - Item added: Jeera Rice, cost=25.0
+2025-09-26 09:23:33,648 - INFO - Item added: Fried Rice, cost=50.0
+2025-09-26 09:23:33,662 - INFO - Item added: Biryani (Veg), cost=60.0
+2025-09-26 09:23:33,676 - INFO - Item added: Pulao, cost=45.0
+2025-09-26 09:23:33,691 - INFO - Item added: Khichdi, cost=40.0
+2025-09-26 09:23:33,701 - INFO - Item added: Curd Rice, cost=25.0
+2025-09-26 09:23:33,712 - INFO - Item added: Raita, cost=20.0
+2025-09-26 09:23:33,722 - INFO - Item added: Pickle, cost=15.0
+2025-09-26 09:23:33,731 - INFO - Item added: Papad (2 pcs), cost=10.0
+2025-09-26 09:23:33,742 - INFO - Item added: Samosa (2 pcs), cost=25.0
+2025-09-26 09:23:33,752 - INFO - Item added: Kachori (2 pcs), cost=30.0
+2025-09-26 09:23:33,762 - INFO - Item added: Pakora (6 pcs), cost=35.0
+2025-09-26 09:23:33,771 - INFO - Item added: Bread Pakora, cost=20.0
+2025-09-26 09:23:33,781 - INFO - Item added: Aloo Tikki, cost=25.0
+2025-09-26 09:23:33,791 - INFO - Item added: Chaat, cost=30.0
+2025-09-26 09:23:33,802 - INFO - Item added: Bhel Puri, cost=25.0
+2025-09-26 09:23:33,818 - INFO - Item added: Pani Puri (6 pcs), cost=20.0
+2025-09-26 09:23:33,840 - INFO - Item added: Dahi Puri (6 pcs), cost=30.0
+2025-09-26 09:23:33,850 - INFO - Item added: Sev Puri (6 pcs), cost=25.0
+2025-09-26 09:23:33,860 - INFO - Item added: Pav Bhaji, cost=45.0
+2025-09-26 09:23:33,870 - INFO - Item added: Vada Pav, cost=25.0
+2025-09-26 09:23:33,881 - INFO - Item added: Dabeli, cost=20.0
+2025-09-26 09:23:33,891 - INFO - Item added: Sandwich (Veg), cost=35.0
+2025-09-26 09:23:33,902 - INFO - Item added: Toast Butter, cost=15.0
+2025-09-26 09:23:33,912 - INFO - Item added: Bread Jam, cost=20.0
+2025-09-26 09:23:33,923 - INFO - Item added: Boiled Egg, cost=15.0
+2025-09-26 09:23:33,943 - INFO - Item added: Omelette (Plain), cost=25.0
+2025-09-26 09:23:33,960 - INFO - Item added: Masala Omelette, cost=35.0
+2025-09-26 09:23:33,971 - INFO - Item added: Egg Curry, cost=50.0
+2025-09-26 09:23:33,981 - INFO - Item added: Egg Biryani, cost=60.0
+2025-09-26 09:23:33,991 - INFO - Item added: Egg Fried Rice, cost=45.0
+2025-09-26 09:23:34,001 - INFO - Item added: Egg Sandwich, cost=40.0
+2025-09-26 09:23:34,012 - INFO - Item added: Egg Roll, cost=35.0
+2025-09-26 09:23:34,023 - INFO - Item added: Egg Bhurji, cost=30.0
+2025-09-26 09:23:34,032 - INFO - Item added: Scrambled Eggs, cost=25.0
+2025-09-26 09:23:34,040 - INFO - Item added: Egg Toast, cost=30.0
+2025-09-26 09:23:34,049 - INFO - Item added: Tea, cost=10.0
+2025-09-26 09:23:34,057 - INFO - Item added: Coffee, cost=15.0
+2025-09-26 09:23:34,070 - INFO - Item added: Milk, cost=20.0
+2025-09-26 09:23:34,081 - INFO - Item added: Lassi (Sweet), cost=25.0
+2025-09-26 09:23:34,091 - INFO - Item added: Lassi (Salt), cost=25.0
+2025-09-26 09:23:34,101 - INFO - Item added: Buttermilk, cost=15.0
+2025-09-26 09:23:34,111 - INFO - Item added: Fresh Lime, cost=20.0
+2025-09-26 09:23:34,121 - INFO - Item added: Orange Juice, cost=30.0
+2025-09-26 09:23:34,131 - INFO - Item added: Apple Juice, cost=30.0
+2025-09-26 09:23:34,150 - INFO - Item added: Banana Shake, cost=35.0
+2025-09-26 09:23:34,161 - INFO - Item added: Mango Shake, cost=40.0
+2025-09-26 09:23:34,170 - INFO - Item added: Ice Cream (1 scoop), cost=25.0
+2025-09-26 09:23:34,191 - INFO - Item added: Kulfi, cost=30.0
+2025-09-26 09:23:34,202 - INFO - Item added: Gulab Jamun (2 pcs), cost=20.0
+2025-09-26 09:23:34,211 - INFO - Item added: Rasgulla (2 pcs), cost=15.0
+2025-09-26 09:23:34,222 - INFO - Item added: Jalebi (100g), cost=30.0
+2025-09-26 09:23:34,234 - INFO - Item added: Ladoo (2 pcs), cost=25.0
+2025-09-26 09:23:34,244 - INFO - Item added: Biscuits (4 pcs), cost=15.0
+2025-09-26 09:23:34,256 - INFO - Item added: Namkeen, cost=20.0
+2025-09-26 09:23:34,266 - INFO - Item added: Chips, cost=25.0
+2025-09-26 09:23:34,280 - INFO - Item added: Nuts Mix, cost=40.0
+2025-09-26 09:23:34,281 - INFO - Fetched all items
+2025-09-26 09:23:34,357 - INFO - Fetched all items
+2025-09-26 09:23:34,357 - INFO - Fetched today's menu
+2025-09-26 09:23:37,878 - INFO - Today menu set: []
+2025-09-26 09:23:40,374 - INFO - Fetched today's menu
+2025-09-26 09:23:42,739 - INFO - Fetched all employees
+2025-09-26 09:23:43,007 - INFO - Fetched all employees
+2025-09-26 09:23:43,111 - INFO - Fetched all employees
+2025-09-26 09:23:44,501 - INFO - Fetched all employees
+2025-09-26 09:23:47,911 - INFO - Fetched all items
+2025-09-26 09:23:47,960 - INFO - Fetched all items
+2025-09-26 09:23:47,961 - INFO - Fetched today's menu
+2025-09-26 09:23:51,304 - INFO - Today menu set: [1, 2]
+2025-09-26 09:23:53,660 - INFO - Fetched today's menu
+2025-09-26 09:23:57,141 - INFO - Fetched today's menu
+2025-09-26 09:24:01,206 - INFO - Fetched today's menu
+2025-09-26 09:24:03,818 - INFO - Fetched today's menu
+2025-09-26 09:24:05,633 - INFO - Fetched today's menu
+2025-09-26 09:24:05,635 - INFO - Fetched today's menu
+2025-09-26 09:24:06,562 - WARNING - Duplicate employee ID attempted: EMP001
+2025-09-26 09:24:06,585 - INFO - Order placed: emp_id=EMP001, order_id=1, total=55.0
+2025-09-26 09:24:06,586 - INFO - Fetched all items
+2025-09-26 09:24:06,586 - INFO - Fetched all items
+2025-09-26 09:24:10,907 - INFO - Fetched today's menu
+2025-09-26 09:24:15,729 - INFO - Fetched all employees
+2025-09-26 09:24:16,069 - INFO - Fetched all employees
+2025-09-26 09:24:16,357 - INFO - Fetched all employees
+2025-09-26 09:24:16,865 - INFO - Fetched all employees
+2025-09-26 09:24:18,494 - INFO - Fetched all employees
+2025-09-26 09:24:20,682 - INFO - Fetched KPIs
+2025-09-26 09:24:20,683 - INFO - Fetched top items
+2025-09-26 09:24:20,683 - INFO - Fetched top debtors
+2025-09-26 09:24:20,684 - INFO - Fetched recent orders
+2025-09-26 09:24:27,218 - INFO - Fetched today's menu
+2025-09-26 09:24:28,851 - INFO - Fetched all employees
+2025-09-26 09:24:30,974 - INFO - Fetched all employees
+2025-09-26 09:24:34,007 - INFO - Fetched today's menu
+2025-09-26 09:24:35,365 - WARNING - Duplicate employee ID attempted: EMP039
+2025-09-26 09:24:35,384 - INFO - Order placed: emp_id=EMP039, order_id=2, total=25.0
+2025-09-26 09:24:35,384 - INFO - Fetched all items
+2025-09-26 09:24:38,055 - INFO - Fetched today's menu
+2025-09-26 09:24:41,666 - INFO - Fetched all employees
+2025-09-26 09:24:42,826 - INFO - Fetched all employees
+2025-09-26 09:24:45,959 - INFO - Fetched all employees
+2025-09-26 09:24:50,566 - INFO - Fetched all employees
+2025-09-26 09:24:53,675 - INFO - Fetched all employees
+2025-09-26 09:24:53,941 - INFO - Fetched all employees
+2025-09-26 09:24:54,304 - INFO - Fetched all employees
+2025-09-26 09:24:54,765 - INFO - Fetched all employees
+2025-09-26 09:24:55,983 - INFO - Fetched all employees
+2025-09-26 09:25:02,943 - INFO - Fetched all items
+2025-09-26 09:25:03,022 - INFO - Fetched all items
+2025-09-26 09:25:03,022 - INFO - Fetched today's menu
+2025-09-26 09:25:04,328 - INFO - Fetched KPIs
+2025-09-26 09:25:04,329 - INFO - Fetched top items
+2025-09-26 09:25:04,329 - INFO - Fetched top debtors
+2025-09-26 09:25:04,330 - INFO - Fetched recent orders
+2025-09-26 09:25:08,823 - INFO - Fetched all employees
+2025-09-26 09:25:09,091 - INFO - Fetched all employees
+2025-09-26 09:25:09,139 - INFO - Fetched all employees
+2025-09-26 09:25:17,346 - INFO - Adjusted employee due: id=1, change=-4000.0
+2025-09-26 09:25:18,749 - INFO - Fetched all employees
+2025-09-26 09:25:23,490 - INFO - Fetched all items
+2025-09-26 09:25:23,548 - INFO - Fetched all items
+2025-09-26 09:25:23,548 - INFO - Fetched today's menu

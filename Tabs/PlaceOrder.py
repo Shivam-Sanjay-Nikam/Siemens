@@ -511,7 +511,7 @@ class PlaceOrderTab(QWidget):
         <html>
         <head>
             <style>
-                body {{ font-family: 'Courier New', monospace; margin: 20px; }}
+                body {{ font-family: 'Courier New', 'Helvetica', sans-serif; margin: 20px; }}
                 .header {{ text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px; }}
                 .title {{ font-size: 24px; font-weight: bold; margin-bottom: 5px; }}
                 .subtitle {{ font-size: 14px; color: #666; }}
@@ -786,7 +786,6 @@ class PlaceOrderTab(QWidget):
             }
             QLineEdit:focus {
                 border-color: #0078d4;
-                box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.1);
             }
             QPushButton {
                 background-color: #0078d4;
@@ -800,11 +799,9 @@ class PlaceOrderTab(QWidget):
             }
             QPushButton:hover {
                 background-color: #106ebe;
-                transform: translateY(-1px);
             }
             QPushButton:pressed {
                 background-color: #005a9e;
-                transform: translateY(0px);
             }
             QTableWidget {
                 border: 2px solid #dee2e6;
@@ -909,6 +906,5 @@ class PlaceOrderTab(QWidget):
             }
             /* Add subtle shadows and modern look */
             QTableWidget, QListWidget, QLineEdit {
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             }
         """)
